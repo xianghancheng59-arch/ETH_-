@@ -12,6 +12,7 @@ Python 需安装 `numpy`、`pandas`；下载器其余依赖为标准库。在项
 python3 hourly_prices.py --help
 python3 hourly_prices.py
 python3 hourly_pipeline.py --config hourly_config.json
+python3 hourly_backtest.py
 ```
 
 `hourly_prices.py` 默认复用并校验已有源响应缓存；`--refresh` 重新请求 Binance，另存一次源快照。价格下载器当前固定本次日期区间，若改样本范围，需同时修改下载器参数常量及配置，不应只改输出日期。完整 UTC 日的聚合检查只基于小时行情自身，不依赖日频数据集。
@@ -59,6 +60,10 @@ python3 hourly_pipeline.py --config hourly_config.json
 
 - `aligned_hourly.csv`／`aligned_hourly_with_warmup.csv`：价格、链上输入、CLV、价位距离、数据完整性和已知可用时间下界。
 - `factors_long.csv`：原始因子、去极值值、z-score、MAD、裁剪边界、`clipped`、`status`、缺失原因。
+- `event_forward_returns.csv`：从下一小时开盘入场的 1/3/6/12/24/72 小时事件收益统计。
+- `hourly_strategy_returns.csv`：逐小时 1 小时信号收益，含 2 bps 换手成本。
+- `backtest_summary.csv`：描述性快照回测与严格 PIT 筛选汇总。
+- `hourly_backtest_manifest.json`：回测对齐规则、输入哈希和可用性限制。
 - `matrices/chain/{raw,winsorized,zscore}/`：每个原因子各一张“小时 × 资产”矩阵。
 - `run_manifest.json`：数据数量、各因子的缺失状态、裁剪情况和小时行情的 UTC 日聚合检查。
 - `factor_catalog.json`：公式和所需输入。
