@@ -1,0 +1,20 @@
+{
+  "source": "Santiment public GraphQL",
+  "endpoint": "https://api.santiment.net/graphql",
+  "metrics": [
+    "exchange_inflow",
+    "exchange_outflow",
+    "marketcap_usd",
+    "price_usd"
+  ],
+  "flow_unit_source": "ETH",
+  "flow_unit_pipeline": "USD = ETH flow * same-hour price_usd",
+  "rows": 4092,
+  "first": "2026-04-15T00:00:00+00:00",
+  "last": "2026-10-02T11:00:00+00:00",
+  "target_hours": 2904,
+  "missing_target_hours": 660,
+  "retrieved_at_utc": "2026-11-01T12:27:20.576344+00:00",
+  "pit_eligible": false,
+  "note": "Observed complete access buckets end at 2026-10-02 11:00 UTC; the 12:00 bucket was excluded because access restriction falls inside that bucket."
+}

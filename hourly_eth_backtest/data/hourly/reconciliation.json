@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-11-03T08:52:04.925835+00:00",
+  "request_spec": {
+    "symbol": "ETHUSDT",
+    "interval": "1h",
+    "start_utc": "2026-04-15T00:00:00+00:00",
+    "end_exclusive_utc": "2026-10-30T00:00:00+00:00",
+    "output_start_utc": "2026-07-01T00:00:00+00:00"
+  },
+  "counts": {
+    "expected_hours_with_warmup": 4752,
+    "observed_hours_with_warmup": 4752,
+    "missing_hours_with_warmup": 0,
+    "expected_output_hours": 2904,
+    "observed_output_hours": 2904,
+    "missing_output_hours": 0,
+    "missing_hour_starts_utc": [],
+    "duplicate_hours": 0,
+    "invalid_ohlc_rows": 0,
+    "source_timestamp_units": [
+      "ms"
+    ],
+    "no_missing_hours_fabricated": true
+  },
+  "reference_file": null,
+  "daily_aggregation": "UTC days derived only from hourly observations; first open, maximum high, minimum low, last close, sum base and quote volume; only 24-observation days",
+  "complete_hourly_days": 198,
+  "reference_daily_rows": null,
+  "compared_days": 0,
+  "incomplete_source_days": {},
+  "fields": {
+    "open": {
+      "complete_days": 198,
+      "finite_values": 198
+    },
+    "high": {
+      "complete_days": 198,
+      "finite_values": 198
+    },
+    "low": {
+      "complete_days": 198,
+      "finite_values": 198
+    },
+    "close": {
+      "complete_days": 198,
+      "finite_values": 198
+    },
+    "volume_eth": {
+      "complete_days": 198,
+      "finite_values": 198
+    },
+    "quote_volume_usdt": {
+      "complete_days": 198,
+      "finite_values": 198
+    }
+  },
+  "mismatches": [],
+  "all_compared_values_match": null,
+  "full_range_reconciled": true,
+  "interpretation": "These are actual hourly market observations. No daily source dataset is used; this check only validates complete UTC-day coverage derived from hourly rows.",
+  "hourly_prices_csv": "data/hourly/hourly_prices.csv",
+  "hourly_prices_csv_sha256": "01ea65d88f999db5e3afbca996f398ae8c0d3d27738297b51f2a951a8ca95af1"
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "label": "cm_catalog_eth",
+    "url": "https://community-api.coinmetrics.io/v4/catalog/asset-metrics?assets=eth",
+    "status": 400,
+    "retrieved_at_utc": "2026-10-31T16:45:37.682701+00:00",
+    "sha256": "a998ec7dd303e9e59021c829b8b8039a325182e0f5a9e98cc8740ff71bc3bb50"
+  },
+  {
+    "label": "cm_1h_flows",
+    "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=eth&metrics=FlowInExUSD%2CFlowOutExUSD&frequency=1h&start_time=2026-07-01&end_time=2026-07-02&page_size=100",
+    "status": 403,
+    "retrieved_at_utc": "2026-10-31T16:45:38.045014+00:00",
+    "sha256": "2ec34688b9be4ad5b1137ac75737ccf69cdee3180298b26db0c35213b79265df"
+  },
+  {
+    "label": "cm_1h_cap",
+    "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=eth&metrics=CapMrktCurUSD&frequency=1h&start_time=2026-07-01&end_time=2026-07-02&page_size=100",
+    "status": 400,
+    "retrieved_at_utc": "2026-10-31T16:45:38.742897+00:00",
+    "sha256": "8ca2c86a24447fa2bd19a9eb6ff1888d94d8143dbe6d7d3d8e3478d95e6318d7"
+  },
+  {
+    "label": "cm_1h_price",
+    "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=eth&metrics=PriceUSD&frequency=1h&start_time=2026-07-01&end_time=2026-07-02&page_size=100",
+    "status": 403,
+    "retrieved_at_utc": "2026-10-31T16:45:39.095999+00:00",
+    "sha256": "2822e29a030a8a42ae50149b43c0954ef76eed741e2598152e02641ebb6f5e3b"
+  }
+]

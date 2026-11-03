@@ -1,0 +1,148 @@
+[
+  {
+    "name": "santiment_full_inflow",
+    "url": "https://api.santiment.net/graphql",
+    "request_query": "{getMetric(metric:\"exchange_inflow\"){timeseriesData(slug:\"ethereum\",from:\"2026-04-15T00:00:00Z\",to:\"2026-10-30T00:00:00Z\",interval:\"1h\"){datetime value}}}",
+    "http_status": 200,
+    "retrieved_at_utc": "2026-11-01T12:27:18.426284+00:00",
+    "sha256": "77e2e3646b7b7ca563475e6a4854ec3c3c3568649588ec766a5b5a1b7d376442",
+    "bytes": 254254,
+    "rows": 4093,
+    "first": {
+      "datetime": "2026-04-15T00:00:00Z",
+      "value": 7184.701821486514
+    },
+    "last": {
+      "datetime": "2026-10-02T12:00:00Z",
+      "value": 2164.05172749899
+    },
+    "errors": null,
+    "metadata": null
+  },
+  {
+    "name": "santiment_full_outflow",
+    "url": "https://api.santiment.net/graphql",
+    "request_query": "{getMetric(metric:\"exchange_outflow\"){timeseriesData(slug:\"ethereum\",from:\"2026-04-15T00:00:00Z\",to:\"2026-10-30T00:00:00Z\",interval:\"1h\"){datetime value}}}",
+    "http_status": 200,
+    "retrieved_at_utc": "2026-11-01T12:27:18.653798+00:00",
+    "sha256": "42199ded9c33242929bebe35f348ac54cbaef6c7dcd3ddd47340b4c83d6eabd5",
+    "bytes": 254296,
+    "rows": 4093,
+    "first": {
+      "datetime": "2026-04-15T00:00:00Z",
+      "value": 5061.701228133861
+    },
+    "last": {
+      "datetime": "2026-10-02T12:00:00Z",
+      "value": 7271.285776349559
+    },
+    "errors": null,
+    "metadata": null
+  },
+  {
+    "name": "santiment_full_marketcap",
+    "url": "https://api.santiment.net/graphql",
+    "request_query": "{getMetric(metric:\"marketcap_usd\"){timeseriesData(slug:\"ethereum\",from:\"2026-04-15T00:00:00Z\",to:\"2026-10-30T00:00:00Z\",interval:\"1h\"){datetime value}}}",
+    "http_status": 200,
+    "retrieved_at_utc": "2026-11-01T12:27:19.337997+00:00",
+    "sha256": "f39b327456b139f9d1a1da80781291ac70604455c708e78fbac661f8fa421a80",
+    "bytes": 280407,
+    "rows": 4752,
+    "first": {
+      "datetime": "2026-04-15T00:00:00Z",
+      "value": 281767421171.0
+    },
+    "last": {
+      "datetime": "2026-10-29T23:00:00Z",
+      "value": 274810964482.0
+    },
+    "errors": null,
+    "metadata": null
+  },
+  {
+    "name": "santiment_full_price",
+    "url": "https://api.santiment.net/graphql",
+    "request_query": "{getMetric(metric:\"price_usd\"){timeseriesData(slug:\"ethereum\",from:\"2026-04-15T00:00:00Z\",to:\"2026-10-30T00:00:00Z\",interval:\"1h\"){datetime value}}}",
+    "http_status": 200,
+    "retrieved_at_utc": "2026-11-01T12:27:20.576344+00:00",
+    "sha256": "72fa6a661ba0a0480e0167740855107248d0b6695315665b49b8414c2bdcc910",
+    "bytes": 294150,
+    "rows": 4752,
+    "first": {
+      "datetime": "2026-04-15T00:00:00Z",
+      "value": 2334.61849162863
+    },
+    "last": {
+      "datetime": "2026-10-29T23:00:00Z",
+      "value": 2249.356829734315
+    },
+    "errors": null,
+    "metadata": null
+  },
+  {
+    "name": "santiment_inflow_metadata",
+    "url": "https://api.santiment.net/graphql",
+    "request_query": "{getMetric(metric:\"exchange_inflow\"){metadata{metric minInterval isAccessible isRestricted docsLink availableSlugs}}}",
+    "http_status": 200,
+    "retrieved_at_utc": "2026-11-01T12:27:18.979527+00:00",
+    "sha256": "059ade15a61583a55b792184668bb126da582fb6e9df8d3cf74a0c97832d7953",
+    "bytes": 146,
+    "rows": null,
+    "errors": [
+      {
+        "message": "Cannot query field \"docsLink\" on type \"MetricMetadata\". Did you mean \"docs\"?",
+        "locations": [
+          {
+            "line": 1,
+            "column": 92
+          }
+        ]
+      }
+    ],
+    "metadata": null
+  },
+  {
+    "name": "santiment_price_metadata",
+    "url": "https://api.santiment.net/graphql",
+    "request_query": "{getMetric(metric:\"price_usd\"){metadata{metric minInterval isAccessible isRestricted docsLink}}}",
+    "http_status": 200,
+    "retrieved_at_utc": "2026-11-01T12:27:19.313657+00:00",
+    "sha256": "45a78ec0c6f8b6ca22162bafa69ba7811ceb828db549d7baff3fd92fd11826e4",
+    "bytes": 146,
+    "rows": null,
+    "errors": [
+      {
+        "message": "Cannot query field \"docsLink\" on type \"MetricMetadata\". Did you mean \"docs\"?",
+        "locations": [
+          {
+            "line": 1,
+            "column": 86
+          }
+        ]
+      }
+    ],
+    "metadata": null
+  },
+  {
+    "name": "santiment_cap_metadata",
+    "url": "https://api.santiment.net/graphql",
+    "request_query": "{getMetric(metric:\"marketcap_usd\"){metadata{metric minInterval isAccessible isRestricted docsLink}}}",
+    "http_status": 200,
+    "retrieved_at_utc": "2026-11-01T12:27:19.699238+00:00",
+    "sha256": "d8805b132016c715efbf679274c8d41fe545b10bbb16c98db566732abf140849",
+    "bytes": 146,
+    "rows": null,
+    "errors": [
+      {
+        "message": "Cannot query field \"docsLink\" on type \"MetricMetadata\". Did you mean \"docs\"?",
+        "locations": [
+          {
+            "line": 1,
+            "column": 90
+          }
+        ]
+      }
+    ],
+    "metadata": null
+  }
+]

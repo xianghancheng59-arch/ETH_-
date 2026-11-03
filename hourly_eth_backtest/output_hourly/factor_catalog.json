@@ -1,0 +1,58 @@
+[
+  {
+    "factor": "net_outflow_cap",
+    "name_zh": "小时净流出市值比",
+    "formula": "(O_h-I_h)/M_(h-1)",
+    "inputs": "真实小时链上流入、流出；前小时市值",
+    "family": "chain"
+  },
+  {
+    "factor": "flow_imbalance",
+    "name_zh": "小时流出流入失衡",
+    "formula": "(O_h-I_h)/(O_h+I_h)",
+    "inputs": "真实小时链上流入、流出",
+    "family": "chain"
+  },
+  {
+    "factor": "outflow_momentum_72_336h",
+    "name_zh": "净流出动量72/336小时",
+    "formula": "mean(q,72h)-mean(q,336h)",
+    "inputs": "真实小时净流出市值比连续历史",
+    "family": "chain"
+  },
+  {
+    "factor": "gross_flow_cap",
+    "name_zh": "小时交易所流转强度",
+    "formula": "(O_h+I_h)/M_(h-1)",
+    "inputs": "真实小时链上流入、流出；前小时市值",
+    "family": "chain"
+  },
+  {
+    "factor": "support_outflow_2400",
+    "name_zh": "2400价位加权净流出",
+    "formula": "P_h(2400)*q_h",
+    "inputs": "真实小时链上流量、前小时市值、小时收盘",
+    "family": "chain"
+  },
+  {
+    "factor": "support_resilience_2400",
+    "name_zh": "2400价位加权承接代理",
+    "formula": "P_h(2400)*CLV_h*I_h/M_(h-1)",
+    "inputs": "真实小时链上流入、前小时市值、小时高低收",
+    "family": "chain"
+  },
+  {
+    "factor": "support_outflow_2300",
+    "name_zh": "2300价位加权净流出",
+    "formula": "P_h(2300)*q_h",
+    "inputs": "真实小时链上流量、前小时市值、小时收盘",
+    "family": "chain"
+  },
+  {
+    "factor": "support_resilience_2300",
+    "name_zh": "2300价位加权承接代理",
+    "formula": "P_h(2300)*CLV_h*I_h/M_(h-1)",
+    "inputs": "真实小时链上流入、前小时市值、小时高低收",
+    "family": "chain"
+  }
+]

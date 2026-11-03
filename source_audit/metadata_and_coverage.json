@@ -1,0 +1,53 @@
+{
+  "source": "Santiment public GraphQL",
+  "requested_from_inclusive": "2026-04-15T00:00:00Z",
+  "requested_to_exclusive": "2026-10-30T00:00:00Z",
+  "target_from_inclusive": "2026-07-01T00:00:00Z",
+  "target_to_exclusive": "2026-10-30T00:00:00Z",
+  "target_hours": 2904,
+  "flow_download_at_utc": {
+    "inflow": "2026-11-01T12:27:18.426284+00:00",
+    "outflow": "2026-11-01T12:27:18.653798+00:00"
+  },
+  "price_download_at_utc": "2026-11-01T12:27:20.576344+00:00",
+  "cap_download_at_utc": "2026-11-01T12:27:19.337997+00:00",
+  "flow_unit": "ETH, not USD",
+  "flow_default_aggregation": "SUM",
+  "flow_min_interval": "5m",
+  "flow_stabilization_period": "12h (metadata, not proof of historical first availability)",
+  "price_unit": "USD per ETH",
+  "cap_unit": "USD",
+  "price_cap_default_aggregation": "LAST",
+  "price_cap_metadata_min_interval": "1s",
+  "flow_access_latest_timestamp_at_metadata_check": "2026-10-02T12:28:58+00:00",
+  "flow_returned_with_warmup": 4093,
+  "flow_returned_in_target": 2245,
+  "flow_target_absent": 659,
+  "flow_boundary_hour_label_excluded": "2026-10-02T12:00:00Z",
+  "flow_boundary_exclusion_reason": "Access restrictedTo lies inside this bucket; final 1h completeness is not established.",
+  "flow_complete_access_buckets_with_warmup": 4092,
+  "flow_complete_access_buckets_target": 2244,
+  "flow_complete_target_range_start_inclusive": "2026-07-01T00:00:00Z",
+  "flow_complete_target_range_end_exclusive": "2026-10-02T12:00:00Z",
+  "last_complete_hour_label_inclusive": "2026-10-02T11:00:00Z",
+  "flow_missing_or_excluded_target": 660,
+  "price_cap_rows_with_warmup": 4752,
+  "price_cap_rows_target": 2904,
+  "interval_label_evidence": "For two complete July 1 hours, 1h flow = sum of 12 5m buckets labelled hh:00..hh:55; 1h price/cap = LAST of those buckets. See ../chain_followup_raw/boundary_comparison.json. Labels are bucket starts; price/cap is a LAST snapshot within bucket, not necessarily exactly at hour end.",
+  "pit_eligibility": false,
+  "historical_publication_times_available": false,
+  "files": [
+    {
+      "name": "price_marketcap_observed.csv",
+      "sha256": "f0e12c3b49894fa95e85ebdc7ff9d28c863ce249a5df2c36330790777adda141"
+    },
+    {
+      "name": "flows_native_observed.csv",
+      "sha256": "5667a4ca79895e8e1a38d673ed19fd223138cc91730799eccc6bd2b311870660"
+    },
+    {
+      "name": "target_coverage_audit.csv",
+      "sha256": "a91400ae54a5c408c8b6ce4634625954acddc1c7fc5da036923fe7ec76a6bd02"
+    }
+  ]
+}

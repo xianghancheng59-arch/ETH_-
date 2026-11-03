@@ -1,0 +1,21 @@
+{
+  "asset": "ETH",
+  "symbol": "ETHUSDT",
+  "data_start": "2026-04-15T00:00:00Z",
+  "output_start": "2026-07-01T00:00:00Z",
+  "output_end_exclusive": "2026-10-30T00:00:00Z",
+  "timezone": "UTC",
+  "frequency": "h",
+  "short_window_hours": 72,
+  "long_window_hours": 336,
+  "preprocess_window_hours": 1440,
+  "preprocess_min_observations": 720,
+  "mad_multiplier": 3.0,
+  "support_levels_usdt": [2400, 2300],
+  "support_band_fraction": 0.02,
+  "neutralize": false,
+  "hourly_chain_csv": "data/hourly/santiment_hourly_chain.csv",
+  "include_market_factors": false,
+  "market_normalizer_hours": 24,
+  "data_vintage": "latest_snapshot_research_only"
+}

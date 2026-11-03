@@ -1,0 +1,35 @@
+{
+  "frequency": "1h",
+  "timezone": "UTC",
+  "signal_rule": "factor at completed hour t",
+  "execution_rule": "enter at next hour open; exit at close after the stated horizon",
+  "horizons_hours": [
+    1,
+    3,
+    6,
+    12,
+    24,
+    72
+  ],
+  "fee_bps_per_turnover": 2.0,
+  "snapshot_results_are_pit_qualified": false,
+  "pit_eligible_rows": 0,
+  "chain_complete_hours": 2244,
+  "output_hours": 2904,
+  "source_files": {
+    "aligned_hourly": {
+      "path": "output_hourly/aligned_hourly.csv",
+      "sha256": "d280a259fc05545f69e3e9e6b73d72352533ba388fc7e83a55dd3501126d090f"
+    },
+    "factors_long": {
+      "path": "output_hourly/factors_long.csv",
+      "sha256": "2f3d054d5a6472167aad8562fabc74b1bda76bedbe6c5c3523b0c3e25b83b6d7"
+    }
+  },
+  "limitations": [
+    "Santiment flow snapshot was downloaded after the sample; strict historical PIT eligibility is false.",
+    "660 target hours have missing chain inputs and are excluded from factor events; no fill or daily disaggregation is used.",
+    "Overlapping multi-hour event labels are descriptive and are not compounded into a tradable portfolio.",
+    "The one-hour strategy includes a 2 bps turnover cost but no spread, slippage, funding, borrow, or market impact model."
+  ]
+}

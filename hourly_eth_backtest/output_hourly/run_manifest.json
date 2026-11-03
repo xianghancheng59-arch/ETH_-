@@ -1,0 +1,219 @@
+{
+  "config": {
+    "asset": "ETH",
+    "symbol": "ETHUSDT",
+    "data_start": "2026-04-15T00:00:00Z",
+    "output_start": "2026-07-01T00:00:00Z",
+    "output_end_exclusive": "2026-10-30T00:00:00Z",
+    "timezone": "UTC",
+    "frequency": "h",
+    "short_window_hours": 72,
+    "long_window_hours": 336,
+    "preprocess_window_hours": 1440,
+    "preprocess_min_observations": 720,
+    "mad_multiplier": 3.0,
+    "support_levels_usdt": [
+      2400,
+      2300
+    ],
+    "support_band_fraction": 0.02,
+    "neutralize": false,
+    "hourly_chain_csv": "data/hourly/santiment_hourly_chain.csv",
+    "include_market_factors": false,
+    "market_normalizer_hours": 24,
+    "data_vintage": "latest_snapshot_research_only"
+  },
+  "generated_at": "2026-11-03T09:14:35.484374+00:00",
+  "output_hours": 2904,
+  "output_days": 121.0,
+  "warmup_and_output_hours": 4752,
+  "price_complete_hours": 2904,
+  "chain_complete_hours": 2244,
+  "strict_pit_available": false,
+  "summary": [
+    {
+      "family": "chain",
+      "factor": "flow_imbalance",
+      "rows": 2904,
+      "raw_non_missing": 2244,
+      "zscore_non_missing": 2244,
+      "clipped_rows": 3,
+      "clipped_fraction": 0.001336898395721925,
+      "status_counts": {
+        "ok": 2244,
+        "missing_current": 660
+      }
+    },
+    {
+      "family": "chain",
+      "factor": "gross_flow_cap",
+      "rows": 2904,
+      "raw_non_missing": 2244,
+      "zscore_non_missing": 2244,
+      "clipped_rows": 216,
+      "clipped_fraction": 0.0962566844919786,
+      "status_counts": {
+        "ok": 2244,
+        "missing_current": 660
+      }
+    },
+    {
+      "family": "chain",
+      "factor": "net_outflow_cap",
+      "rows": 2904,
+      "raw_non_missing": 2244,
+      "zscore_non_missing": 2244,
+      "clipped_rows": 254,
+      "clipped_fraction": 0.11319073083778966,
+      "status_counts": {
+        "ok": 2244,
+        "missing_current": 660
+      }
+    },
+    {
+      "family": "chain",
+      "factor": "outflow_momentum_72_336h",
+      "rows": 2904,
+      "raw_non_missing": 2244,
+      "zscore_non_missing": 2244,
+      "clipped_rows": 18,
+      "clipped_fraction": 0.008021390374331552,
+      "status_counts": {
+        "ok": 2244,
+        "missing_current": 660
+      }
+    },
+    {
+      "family": "chain",
+      "factor": "support_outflow_2300",
+      "rows": 2904,
+      "raw_non_missing": 2244,
+      "zscore_non_missing": 2244,
+      "clipped_rows": 1330,
+      "clipped_fraction": 0.5926916221033868,
+      "status_counts": {
+        "ok": 2244,
+        "missing_current": 660
+      }
+    },
+    {
+      "family": "chain",
+      "factor": "support_outflow_2400",
+      "rows": 2904,
+      "raw_non_missing": 2244,
+      "zscore_non_missing": 2244,
+      "clipped_rows": 1347,
+      "clipped_fraction": 0.6002673796791443,
+      "status_counts": {
+        "ok": 2244,
+        "missing_current": 660
+      }
+    },
+    {
+      "family": "chain",
+      "factor": "support_resilience_2300",
+      "rows": 2904,
+      "raw_non_missing": 2244,
+      "zscore_non_missing": 2244,
+      "clipped_rows": 1337,
+      "clipped_fraction": 0.5958110516934046,
+      "status_counts": {
+        "ok": 2244,
+        "missing_current": 660
+      }
+    },
+    {
+      "family": "chain",
+      "factor": "support_resilience_2400",
+      "rows": 2904,
+      "raw_non_missing": 2244,
+      "zscore_non_missing": 2244,
+      "clipped_rows": 1339,
+      "clipped_fraction": 0.5967023172905526,
+      "status_counts": {
+        "ok": 2244,
+        "missing_current": 660
+      }
+    }
+  ],
+  "example": {
+    "date": "2026-08-27",
+    "daily_high": 2566.53,
+    "daily_low": 2481.74,
+    "daily_close": 2510.94,
+    "positive_hourly_clv": 12,
+    "negative_hourly_clv": 12,
+    "daily_clv": -0.31123953296378987
+  },
+  "hourly_price_manifest": "data/hourly/hourly_prices_manifest.json",
+  "daily_reconciliation": {
+    "generated_at": "2026-11-03T08:52:04.925835+00:00",
+    "request_spec": {
+      "symbol": "ETHUSDT",
+      "interval": "1h",
+      "start_utc": "2026-04-15T00:00:00+00:00",
+      "end_exclusive_utc": "2026-10-30T00:00:00+00:00",
+      "output_start_utc": "2026-07-01T00:00:00+00:00"
+    },
+    "counts": {
+      "expected_hours_with_warmup": 4752,
+      "observed_hours_with_warmup": 4752,
+      "missing_hours_with_warmup": 0,
+      "expected_output_hours": 2904,
+      "observed_output_hours": 2904,
+      "missing_output_hours": 0,
+      "missing_hour_starts_utc": [],
+      "duplicate_hours": 0,
+      "invalid_ohlc_rows": 0,
+      "source_timestamp_units": [
+        "ms"
+      ],
+      "no_missing_hours_fabricated": true
+    },
+    "reference_file": null,
+    "daily_aggregation": "UTC days derived only from hourly observations; first open, maximum high, minimum low, last close, sum base and quote volume; only 24-observation days",
+    "complete_hourly_days": 198,
+    "reference_daily_rows": null,
+    "compared_days": 0,
+    "incomplete_source_days": {},
+    "fields": {
+      "open": {
+        "complete_days": 198,
+        "finite_values": 198
+      },
+      "high": {
+        "complete_days": 198,
+        "finite_values": 198
+      },
+      "low": {
+        "complete_days": 198,
+        "finite_values": 198
+      },
+      "close": {
+        "complete_days": 198,
+        "finite_values": 198
+      },
+      "volume_eth": {
+        "complete_days": 198,
+        "finite_values": 198
+      },
+      "quote_volume_usdt": {
+        "complete_days": 198,
+        "finite_values": 198
+      }
+    },
+    "mismatches": [],
+    "all_compared_values_match": null,
+    "full_range_reconciled": true,
+    "interpretation": "These are actual hourly market observations. No daily source dataset is used; this check only validates complete UTC-day coverage derived from hourly rows.",
+    "hourly_prices_csv": "data/hourly/hourly_prices.csv",
+    "hourly_prices_csv_sha256": "01ea65d88f999db5e3afbca996f398ae8c0d3d27738297b51f2a951a8ca95af1"
+  },
+  "limitations": [
+    "小时链上流量来自 Santiment Public GraphQL，流量原始单位为 ETH，按同小时 Santiment USD 价格换算为 USD；不使用日流量拆分。",
+    "Santiment 小时流量在正式区间只有 2244/2904 个完整小时，其余小时保留缺失。",
+    "当前快照与供应商版本时间不能自动证明历史PIT可交易性。",
+    "价位权重为对称连续权重，不证明触及或守住支撑。MAD截尾可能压缩这些因子的差异。",
+    "小时成交量价组若启用，是另一套定义。主动买卖成交额不是交易所地址流入流出。"
+  ]
+}

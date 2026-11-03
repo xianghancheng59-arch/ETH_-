@@ -1,0 +1,94 @@
+{
+  "request_spec": {
+    "symbol": "ETHUSDT",
+    "interval": "1h",
+    "start_utc": "2026-04-15T00:00:00+00:00",
+    "end_exclusive_utc": "2026-10-30T00:00:00+00:00",
+    "output_start_utc": "2026-07-01T00:00:00+00:00"
+  },
+  "download_started_at": "2026-10-31T16:48:48.060788+00:00",
+  "download_finished": true,
+  "sources": [
+    {
+      "path": "data/hourly/snapshot_20261031T164848060788Z/binance_ethusdt_1h_001.json",
+      "url": "https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=1h&startTime=1776211200000&endTime=1793318399999&limit=1000",
+      "retrieved_at": "2026-10-31T16:48:48.215828+00:00",
+      "sha256": "d6a3bcae47327371595048b070ad60b4b535c98f16f015f98f67eac0a2a39338",
+      "http_status": 200,
+      "response_headers": {
+        "Date": "Sat, 31 Oct 2026 16:48:48 GMT",
+        "Content-Type": "application/json;charset=UTF-8"
+      },
+      "row_count": 1000,
+      "requested_start_utc": "2026-04-15T00:00:00+00:00",
+      "first_open_utc": "2026-04-15T00:00:00+00:00",
+      "last_open_utc": "2026-05-26T15:00:00+00:00",
+      "source_timestamp_unit": "ms"
+    },
+    {
+      "path": "data/hourly/snapshot_20261031T164848060788Z/binance_ethusdt_1h_002.json",
+      "url": "https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=1h&startTime=1779811200000&endTime=1793318399999&limit=1000",
+      "retrieved_at": "2026-10-31T16:48:48.473603+00:00",
+      "sha256": "a0bf8d2ef40db0dfee86dabbc8885536f2cd60a8df605214fd88f3be99296216",
+      "http_status": 200,
+      "response_headers": {
+        "Date": "Sat, 31 Oct 2026 16:48:48 GMT",
+        "Content-Type": "application/json;charset=UTF-8"
+      },
+      "row_count": 1000,
+      "requested_start_utc": "2026-05-26T16:00:00+00:00",
+      "first_open_utc": "2026-05-26T16:00:00+00:00",
+      "last_open_utc": "2026-07-07T07:00:00+00:00",
+      "source_timestamp_unit": "ms"
+    },
+    {
+      "path": "data/hourly/snapshot_20261031T164848060788Z/binance_ethusdt_1h_003.json",
+      "url": "https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=1h&startTime=1783411200000&endTime=1793318399999&limit=1000",
+      "retrieved_at": "2026-10-31T16:48:48.597661+00:00",
+      "sha256": "93d7f056d8b7fd7cf34a28577e9f36140f25b20ac526d1a2124c475227366ef1",
+      "http_status": 200,
+      "response_headers": {
+        "Date": "Sat, 31 Oct 2026 16:48:48 GMT",
+        "Content-Type": "application/json;charset=UTF-8"
+      },
+      "row_count": 1000,
+      "requested_start_utc": "2026-07-07T08:00:00+00:00",
+      "first_open_utc": "2026-07-07T08:00:00+00:00",
+      "last_open_utc": "2026-08-17T23:00:00+00:00",
+      "source_timestamp_unit": "ms"
+    },
+    {
+      "path": "data/hourly/snapshot_20261031T164848060788Z/binance_ethusdt_1h_004.json",
+      "url": "https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=1h&startTime=1787011200000&endTime=1793318399999&limit=1000",
+      "retrieved_at": "2026-10-31T16:48:48.709979+00:00",
+      "sha256": "8fa3f5d7f4885aa8f1d5ac91dbebb2d53a47ce0c8add9b7d096ea984362b5f03",
+      "http_status": 200,
+      "response_headers": {
+        "Date": "Sat, 31 Oct 2026 16:48:48 GMT",
+        "Content-Type": "application/json;charset=UTF-8"
+      },
+      "row_count": 1000,
+      "requested_start_utc": "2026-08-18T00:00:00+00:00",
+      "first_open_utc": "2026-08-18T00:00:00+00:00",
+      "last_open_utc": "2026-09-28T15:00:00+00:00",
+      "source_timestamp_unit": "ms"
+    },
+    {
+      "path": "data/hourly/snapshot_20261031T164848060788Z/binance_ethusdt_1h_005.json",
+      "url": "https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=1h&startTime=1790611200000&endTime=1793318399999&limit=1000",
+      "retrieved_at": "2026-10-31T16:48:48.912342+00:00",
+      "sha256": "0480f7681315f0969842e50bef0425c154aae80f15f260cce37ff8e45c7f19fc",
+      "http_status": 200,
+      "response_headers": {
+        "Date": "Sat, 31 Oct 2026 16:48:48 GMT",
+        "Content-Type": "application/json;charset=UTF-8"
+      },
+      "row_count": 752,
+      "requested_start_utc": "2026-09-28T16:00:00+00:00",
+      "first_open_utc": "2026-09-28T16:00:00+00:00",
+      "last_open_utc": "2026-10-29T23:00:00+00:00",
+      "source_timestamp_unit": "ms"
+    }
+  ],
+  "download_finished_at": "2026-10-31T16:48:48.913222+00:00"
+}
