@@ -35,3 +35,13 @@ python3 -m unittest test_hourly_pipeline.py test_hourly_preprocessing.py
 - `hourly_backtest_manifest.json`：样本、哈希和限制
 
 来源证据位于 `source_audit/`。
+
+## 三张核心诊断图
+
+运行 `python3 plot_hourly_diagnostics.py` 生成：
+
+- `hourly_eth_backtest/output_hourly/plots/01_ic_heatmap.png`：因子与未来收益的 Spearman IC。
+- `hourly_eth_backtest/output_hourly/plots/02_group_returns_heatmap.png`：按过去 1,440 小时历史分位数分组后的下一小时收益。
+- `hourly_eth_backtest/output_hourly/plots/03_monotonicity_small_multiples.png`：Low 到 High 五组的收益曲线，用于观察单调性。
+
+分组只使用当前小时之前的数据，最少需要 720 个历史有效值。
